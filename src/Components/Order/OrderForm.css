@@ -1,0 +1,64 @@
+.order-form {
+  margin: 1rem 0;
+}
+
+.order-control {
+  margin-bottom: 0.5rem;
+}
+
+.order-control label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.order-control input {
+  font: inherit;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  border-radius: 4px;
+  width: 20rem;
+  max-width: 100%;
+}
+
+.order-actions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.order-actions button {
+  font: inherit;
+  color: #2d2835;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-radius: 25px;
+  padding: 0.5rem 2rem;
+}
+
+.order-actions button:hover,
+.order-actions button:active {
+  background-color: #989492;
+}
+
+.order-actions .order-submit {
+  border: 1px solid #2d2835;
+  background-color: #2d2835;
+  color: white;
+}
+
+.order-actions .order-submit:hover,
+.order-actions .order-submit:active {
+  background-color: #2d1c2f;
+}
+
+
+.order-invalid input {
+  border-color: #aa0b20;
+  background-color: #ffeff1;
+}
+.order-invalid p {
+  color: red;
+}

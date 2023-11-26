@@ -1,0 +1,28 @@
+.meals {
+  max-width: 60rem;
+  width: 90%;
+  margin: 7rem auto;
+}
+
+.meals ul {
+  list-style: none;
+}
+.cart-nav {
+  margin-bottom: 2rem;
+}
+.cart-nav .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 450px) {
+  .cart-nav{
+    position: sticky;
+    top: 80px;
+  }
+  .cart-nav .card{
+    background-color: #b9e3c9;
+  }
+}
+

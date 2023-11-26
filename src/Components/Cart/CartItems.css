@@ -1,0 +1,112 @@
+.cart-container {
+  max-width: 60rem;
+  width: 90%;
+  margin: 7rem auto;
+}
+
+.cart-items {
+  list-style: none;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.cart-fallBack {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.cart-fallBack button {
+  border: 1px solid transparent;
+  background-color: #2d2835;
+  padding: 0.5rem 0.8rem;
+  color: white;
+  font: inherit;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.actions {
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions button {
+  font: inherit;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #2d2835;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+}
+.actions button:hover,
+.actions button:active {
+  background-color: #2d1c2f;
+  border-color: #2d1c2f;
+  color: white;
+}
+.actions .button--alt {
+  color: #2d2835;
+}
+
+.actions .cart-button {
+  background-color: #2d2835;
+  color: white;
+}
+.cart-save {
+  margin-bottom: 1rem;
+}
+.cart-save .saved {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-save .saved-ok {
+  border: 1px solid transparent;
+  background-color: #2d2835;
+  padding: 0.2rem 1rem;
+  color: white;
+  font: inherit;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 450px) {
+  .actions {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 30px;
+  }
+  .actions div {
+    display: flex;
+    justify-content: space-around;
+  }
+  .actions div:nth-child(2) button {
+    margin-left: 5px;
+  }
+  .cart-save .saved {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .cart-save {
+    position: sticky;
+    top: 150px;
+  }
+  .cart-save .card {
+    background-color: #b9e3c9;
+  }
+}

@@ -1,0 +1,80 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 75px);
+}
+.login-form {
+  background-color: #2d2835;
+  width: 35rem;
+  max-width: 80%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  border-radius: 30px;
+}
+.login-form h1 {
+  text-align: center;
+}
+.login-form .input-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.login-form .input-group label {
+  flex: 1;
+}
+.login-form .input-group input {
+  flex: 2;
+  font: inherit;
+  outline: none;
+  padding: 0.2rem 0.5rem;
+  border: 3px solid transparent;
+  border-radius: 10px;
+}
+.login-form .input-group input:focus,
+.login-form .input-group input:active {
+  border: 3px solid #5b6c71;
+}
+.login-form .change-mode {
+  display: flex;
+  justify-content: flex-end;
+}
+.login-form a {
+  color: white;
+  font-size: 0.9rem;
+}
+.login-form .action {
+  text-align: right;
+}
+.login-form .action button {
+  padding: 0.5rem 1rem;
+  font: inherit;
+  font-weight: bold;
+  color: white;
+  background-color: #5b6c71;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.login-form .action button:disabled {
+  cursor: not-allowed;
+}
+.error-message {
+  font-size: 0.8rem;
+  color: red;
+  text-align: right;
+}
+.user-error {
+  font-size: 0.9rem;
+  color: red;
+  text-align: center;
+}
+
+@media (max-width: 450px) {
+  .login-form .input-group {
+    flex-direction: column;
+  }
+}

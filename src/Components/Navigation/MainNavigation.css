@@ -1,0 +1,123 @@
+.main-header {
+  background-color: #2d1c2f;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.main-header h1 {
+  color: white;
+}
+.main-header nav {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+.main-header ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.main-header ul a {
+  color: white;
+}
+.main-header ul a.active {
+  filter: drop-shadow(3px 3px 10px white);
+}
+.logout-button {
+  font: inherit;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.top-load-indicator {
+  position: fixed;
+  z-index: 11;
+  top: -8px;
+  width: 100%;
+}
+.top-load-indicator progress {
+  width: 100%;
+}
+.hamburger {
+  position: relative;
+  display: none;
+  width: 35px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.hamburger.is-active:before {
+  -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+.hamburger.is-active:after {
+  -webkit-transform: rotate(45deg) translate(-9px, -8px);
+  transform: rotate(45deg) translate(-9px, -8px);
+}
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 50%;
+  min-height: 100vh;
+  display: block;
+  z-index: 9;
+  background-color: #2d1c2f;
+  padding-top: 120px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.mobile-nav li,
+.mobile-nav ul {
+  list-style: none;
+}
+.mobile-nav.is-active {
+  left: 50%;
+}
+.mobile-nav a {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 16px;
+  text-align: center;
+  padding: 12px 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 650px) {
+  .nav-bar ul {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}

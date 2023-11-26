@@ -1,0 +1,34 @@
+.confirm-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+.confirm-container p {
+  text-align: center;
+}
+.confirm-actions {
+  display: flex;
+  justify-content: space-around;
+}
+.confirm-actions .confirm-cancel {
+  border: 1px solid #2d2835;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  font: inherit;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.confirm-actions .confirm-cancel:hover,
+.confirm-actions .confirm-cancel:active{
+    background-color: #9995a0;
+}
+
+.confirm-actions .confirm-ok {
+  border: 1px solid transparent;
+  background-color: #2d2835;
+  padding: 0.5rem 1rem;
+  color: white;
+  font: inherit;
+  border-radius: 10px;
+  cursor: pointer;
+}

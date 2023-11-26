@@ -1,0 +1,33 @@
+@font-face {
+  font-family: ubuntu;
+  src: url("./assets/fonts/Ubuntu-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: ubuntu;
+  scroll-behavior: smooth;
+}
+body {
+  margin-top: 75px;
+  background-color: #5b6c71;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.error-button {
+  border: 1px solid transparent;
+  background-color: #2d2835;
+  padding: 0.7rem 1rem;
+  color: white;
+  font: inherit;
+  border-radius: 10px;
+  cursor: pointer;
+}
