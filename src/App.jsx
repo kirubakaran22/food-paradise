@@ -20,20 +20,20 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: "login",
+        path: "/login",
         element: <LoginPage />,
       },
       {
-        path: "menu",
+        path: "/menu",
         element: <MenuPage />,
       },
       {
-        path: "cart",
+        path: "/cart",
         element: <CartPage />,
         loader: checkUserLoggedIn,
       },
       {
-        path: "logout",
+        path: "/logout",
         action: logoutAction,
       },
     ],
