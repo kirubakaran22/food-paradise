@@ -126,15 +126,15 @@ function MainNavigation() {
         <nav className="nav-bar">
           <ul>{navContent}</ul>
         </nav>
-        <button
+        <div
           onClick={hamburgerClickHandler}
-          class={`hamburger ${hamburgerOpen ? "is-active" : ""}`}
+          className={`hamburger ${hamburgerOpen ? "is-active" : ""}`}
         >
-          <div class="bar"></div>
-        </button>
+          <div className="bar"></div>
+        </div>
       </motion.header>
-      <nav class={`mobile-nav ${hamburgerOpen ? "is-active" : ""}`}>
-        {navContent}
+      <nav className={`mobile-nav ${hamburgerOpen ? "is-active" : ""}`}>
+        <ul>{navContent}</ul>
       </nav>
       <AnimatePresence>
         {confirmLogOut && (
